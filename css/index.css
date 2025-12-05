@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+
+header {
+    background-color:  #3d0d03ff;
+    padding:  20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+header {display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 20px;
+
+}
+.logo {
+    font-size : 26px;
+    font-weight:bold;
+    color:white;
+    letter-spacing:3px;
+    text-transform: uppercase;
+    margin-bottom:10px;
+    text-align: center;
+    background: #efd4d4ff;
+    padding: 10px;
+}
+nav{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    background:   #3d0d03ff;
+    padding:15px 0;
+
+}
+nav a {
+    text-decoration: none;
+    color: #0a0909ff;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+nav a {
+    color: white;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+}
+nav a:hover {
+    color: #3d0d03ff;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #3d0d03ff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.hero {
+    width:100%;
+    min-height:250px;
+    height:60vh;
+    max-height:80vh;
+    overflow:hidden;
+}
+
+.hero img,
+.hero picture {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display:block;
+}
+
+@media( max-width:600px){
+    .hero {
+        height: 35vh !important;
+        min-height:  180px;
+    }
+    .hero img,
+    .hero picture{
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+.external-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+
+}
+
+.external-links li {
+    margin-bottom: 10px;
+}
+
+.external-links a {
+    display: inline-block;
+    font-size: 18px;
+    color: #3d0d03;   
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background-color: #f5e6e1; 
+    transition: 0.3s ease;
+}
+
+.external-links a:hover {
+   background-color: #3d0d03;  
+   color: white;
+     
+}
+
+@media (max-width: 600px) {
+
+  .external-links a {
+  font-size: 14px;  
+  padding: 6px 8px;
+  border-radius: 4px; 
+  }
+
+  .external-links li {
+  margin-bottom: 8px;  
+  }
+
+ h3 {
+font-size: 18px;   
+  }
+}

@@ -1,0 +1,147 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background:  #e0e0e0;
+}
+
+/* HEADER */
+header {
+    background: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+
+}
+nav{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    background:   #3d0d03ff;
+    padding:15px 0;
+
+}
+
+nav a {
+    color: white;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+}
+nav a :hover {
+    color: rgb(252, 236, 236, 1) ;
+    text-decoration: underline;
+}
+h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+.contact-container{
+    width: 90%;
+    max-width: 700px;
+    margin : auto;
+    margin-top:20px;
+    padding: 20px;
+    background:   #9e9292ff;
+    border-radius:10px;
+}
+label{
+    display:block;
+    margin-top:  15px;
+    font-weight:bold;
+}
+button{
+    margin-top:20px;
+    padding:12px;
+    margin-top:5px;
+    background:  #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size:16px;
+}
+button:hover{
+    background:  #555;
+    cursor:pointer;
+}
+.info-box {
+    text-align:center;
+    margin-top:40px;
+    padding:20px;
+
+}
+/* FORM */
+form {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #524f52;
+    background: #5d5b5bff ;
+    border-radius: 10px;
+}
+
+form label {
+    color: rgb(45, 44, 45);
+    font-weight: bold;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #fcf7f7;
+}
+
+form button {
+    background-color: #e5c1c15d;
+    color:  rgb(249, 245, 245) ;
+    border: none ;
+    cursor: pointer ;
+    font-size: 18px ;
+}
+
+form button:hover {
+    background-color:#4e4d4f;
+}
+
+/* FOOTER */
+footer {
+    background-color: #3d0d03ff;
+    color: rgb(240, 251, 255);
+    text-align: center;
+    padding: 10px;
+}
+ /* HAMBURGER MENU */
+.hamburger img {
+    width: 30px;
+    height: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+#hamburger_checkbox {
+   display: none;
+}
+
+@media (max-width: 700px) {
+
+   .hamburger img {
+       display: block;
+    }
+
+    nav {
+       display: none;
+    }
+
+    #hamburger_checkbox:checked + nav {
+        display: block;
+   }
+}
